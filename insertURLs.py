@@ -308,7 +308,7 @@ if __name__ == "__main__":
     mydb = mysql.connector.connect(host = <host>, 
                                 user = <user>, 
                                 passwd=<password>,
-                                database=<password>)
+                                database=<database>)
 
     cursor = mydb.cursor()
     idCounter = 0
