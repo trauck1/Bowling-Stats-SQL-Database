@@ -311,7 +311,9 @@ if __name__ == "__main__":
                                 database=<database>)
 
     cursor = mydb.cursor()
-    idCounter = 0
+    cursor.execute("select max(gameID) from games")
+    result = cursor.fetchone()
+    idCounter = int(result[0])+1
     for url in bowlingUrls:
         date = getDate(url)
         date = dateFormatter(date)
