@@ -1,0 +1,8 @@
+Sample SQL querys:
+
+Shows the average of each player that has played on a given date
+select name, avg(score),date from games where date = '2025-01-01' group by name;
+
+Shows the average, highest ,and lowest score of each player in the database
+select name, avg(score), count(*), max(score), min(score), max(date), min(date) from games group by name;
+
