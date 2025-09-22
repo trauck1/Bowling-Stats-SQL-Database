@@ -1,4 +1,4 @@
-Sample SQL querys:
+Sample SQL queries:
 
 Shows the average of each player that has played on a given date
 select name, avg(score),date from games where date = '2025-01-01' group by name;
