@@ -17,7 +17,6 @@ Strike and spare detection
 
 10th frame special scoring rules
 
-Incomplete game filtering
 
 
 
@@ -61,6 +60,10 @@ Prompts user for new URLs to process
 Connects to existing database
 
 Adds new game data without duplicating the database setup
+
+*queryToCSV.py*
+
+Creates a csv file from a given SQl query
 
 **Database Schema**
 
