@@ -173,5 +173,7 @@ Export functionality for statistical analysis
 **Dependencies**
 
 mysql-connector-python: MySQL database connectivity
+
 beautifulsoup4: HTML parsing and web scraping
+
 requests: HTTP request handling for web scraping
