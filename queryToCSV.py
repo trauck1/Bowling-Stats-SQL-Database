@@ -25,7 +25,7 @@ if __name__ == "__main__":
     column_names = [desc[0] for desc in cursor.description]
 
     # Write to CSV
-    with open("averagesOverTime.csv", "w", newline="") as file:
+    with open("csvFile.csv", "w", newline="") as file:
         writer = csv.writer(file)
     
         # Write header
@@ -34,7 +34,7 @@ if __name__ == "__main__":
         # Write data
         writer.writerows(rows)
 
-    print("CSV written successfully!")
+    print("CSV written")
     # Cleanup
     cursor.close()
     mydb.close()
