@@ -65,11 +65,6 @@ Adds new game data without duplicating the database setup
 
 Creates a csv file from a given SQl query
 
-**Database Schema**
-
-The system creates a games table with the following structure:
-
-ColumnTypeDescriptiongameIDintUnique identifier for each gamenamevarchar(255)Player namedatedateDate of the bowling sessionscoreintTotal game scorestrikesintNumber of strikes achievedstrikeOsintTotal strike opportunitiessparesintNumber of spares achievedspareOsintTotal spare opportunitiesurlvarchar(255)Source URL for the game data
 
 **Web Scraping Implementation**
 The web scraper uses BeautifulSoup to parse HTML content from SyncPassport bowling websites:
